@@ -18,6 +18,8 @@ public class demo1 {
     private static Map<String, Consumer<String>> FUNC_MAP = new ConcurrentHashMap<>();
     private static String MAN = "man";
     private static String WOMAN = "woman";
+
+
     static {
         FUNC_MAP.put(MAN,  s ->{System.out.println(s + "应该去男厕所");});
         FUNC_MAP.put(WOMAN,s ->{System.out.println(s + "应该去女厕所");});
